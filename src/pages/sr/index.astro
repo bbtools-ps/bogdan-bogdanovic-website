@@ -1,0 +1,90 @@
+---
+import Projects from "@/components/Projects.astro";
+import WorkExperience from "@/components/WorkExperience.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Bogdan Bogdanović">
+  <section>
+    <h1 class="text-center">Bogdan Bogdanović</h1>
+    <h2 class="text-center text-4xl">
+      Veb programer / multidiscriplinarni umetnik
+    </h2>
+    <p class="my-10">
+      Zdravo, ja sam Bogdan, strastveni veb programer. Radim u veb razvoju
+      nekoliko godina i imam duboko razumevanje kako da kreiram robusne veb
+      aplikacije.<br /><br />Specijalizovao sam se za korišćenje JavaScript-a i
+      biblioteke React za kreiranje dinamičkih veb aplikacija. Takođe dobro
+      razumem HTML i CSS i uvek učim nove tehnologije i tehnike kako bih bio u
+      toku sa trendovima.<br /><br />U slobodno vreme volim da vozim bicikl i
+      provodim vreme u prirodi. Ovo mi pomaže da se osvežim i čini moj kod
+      boljim :)<br /><br />Uvek sam u potrazi za novim mogućnostima i voleo bih
+      da se povežem i razgovaram o svim projektima koje imate. Pogledajte
+      projekte i slobodno me <a
+        class="text-link"
+        rel="noopener noreferrer"
+        target="_top"
+        href="mailto:bogdi.mail@gmail.com">kontaktirajte</a
+      > ako imate pitanja. Hvala na vremenu!
+    </p>
+  </section>
+  <section>
+    <h2>Featured Projects</h2>
+    <p class="mb-10 md:mb-20">
+      Pogledajte moj <a
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-link"
+        href="https://github.com/bbtools-ps">Github</a
+      > i <a
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-link"
+        href="https://www.behance.net/bogdanbogdanovic">Behance</a
+      > za još projekata.
+    </p>
+    <Projects />
+  </section>
+  <section>
+    <h2>Work Experience</h2>
+    <p class="mb-4 md:mb-10">
+      Pogledajte moj <a
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-link"
+        href="https://www.linkedin.com/in/bogdanbogdanovic/">Linkedin</a
+      > za kompletnu radnu istoriju.
+    </p>
+    <WorkExperience />
+  </section>
+  <section>
+    <h2>Obrazovanje</h2>
+    <p class="mb-4 md:mb-10">
+      Pogledaj moj <a
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-link"
+        href="https://www.linkedin.com/in/bogdanbogdanovic/">Linkedin</a
+      > za kompletno obrazovanje.
+    </p>
+    <div class="flex flex-col gap-10">
+      <div>
+        <h3>SAE Institut</h3><p class="text-lg">
+          <strong>Digitalna video produkcija (kurs)</strong>
+        </p><p>Beograd, Srbija</p>
+      </div><div>
+        <h3>Fakultet tehničkih nauka</h3><p class="text-lg">
+          <strong>Master grafičkog inženjerstva i dizajna</strong>
+        </p><p>Novi Sad, Srbija</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Jezici</h2>
+    <ul class="flex list-disc flex-col gap-4 px-4">
+      <li><strong>srpski</strong><span class="ml-2">(maternji)</span></li>
+      <li><strong>makedonski</strong><span class="ml-2">(maternji)</span></li>
+      <li><strong>engleski</strong><span class="ml-2">(tečno)</span></li>
+    </ul>
+  </section>
+</BaseLayout>

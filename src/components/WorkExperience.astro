@@ -1,0 +1,27 @@
+---
+import { getLangFromUrl } from "@/i18n/utils";
+import { getCollection } from "astro:content";
+import WorkExperienceSingle from "./WorkExperienceSingle.astro";
+
+const lang = getLangFromUrl(Astro.url);
+
+const workExperience = await getCollection("work-experience", ({ slug }) =>
+  slug.startsWith(lang),
+);
+const sortedWorkExperience = workExperience.sort(
+  (a, b) => b.data.sortOrder - a.data.sortOrder,
+);
+---
+
+{
+  sortedWorkExperience.map(({ data }) => (
+    <WorkExperienceSingle
+      jobTitle={data.jobTitle}
+      companyName={data.companyName}
+      companyLink={data.companyLink}
+      description={data.description}
+      startDate={data.startDate}
+      endDate={data.endDate}
+    />
+  ))
+}

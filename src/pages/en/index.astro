@@ -1,0 +1,91 @@
+---
+import Projects from "@/components/Projects.astro";
+import WorkExperience from "@/components/WorkExperience.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Bogdan Bogdanovic">
+  <section>
+    <h1 class="text-center">Bogdan Bogdanovic</h1>
+    <h2 class="text-center text-4xl">
+      Web developer / Multidisciplinary artist
+    </h2>
+    <p class="my-10">
+      Hi, my name is Bogdan, and I'm a passionate web developer. I have been
+      working in web development for several years and have a deep understanding
+      of how to create robust web applications.<br /><br />I specialize in using
+      JavaScript and the React library to create dynamic, data-driven web
+      applications. I also have a strong understanding of HTML and CSS and I am
+      always learning new technologies and techniques to stay ahead of the
+      curve.<br /><br />In my free time, I love to ride a bicycle and spend time
+      in nature. This helps me refresh and makes my code better :)<br /><br />I
+      am always looking for new opportunities and would love to connect and
+      discuss any projects you might have. Check out the projects and feel free
+      to <a
+        class="text-link"
+        rel="noopener noreferrer"
+        target="_top"
+        href="mailto:bogdi.mail@gmail.com">contact me</a
+      > if you have any questions. Thank you for your time!
+    </p>
+  </section>
+  <section>
+    <h2>Featured Projects</h2>
+    <p class="mb-10 md:mb-20">
+      Check out my <a
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-link"
+        href="https://github.com/bbtools-ps">Github</a
+      > and <a
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-link"
+        href="https://www.behance.net/bogdanbogdanovic">Behance</a
+      > for more projects.
+    </p>
+    <Projects />
+  </section>
+  <section>
+    <h2>Work Experience</h2>
+    <p class="mb-4 md:mb-10">
+      Check out my <a
+        rel="noopener noreferrer"
+        target="_blank"
+        class="text-link"
+        href="https://www.linkedin.com/in/bogdanbogdanovic/">Linkedin</a
+      > to see complete work history.
+    </p>
+    <WorkExperience />
+  </section>
+  <section>
+    <h2>Education</h2>
+    <p class="mb-4 md:mb-10">
+      Check out my <a
+        href="https://www.linkedin.com/in/bogdanbogdanovic/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-link">Linkedin</a
+      > to see complete education.
+    </p>
+    <div class="flex flex-col gap-10">
+      <div>
+        <h3>SAE Institute</h3><p class="text-lg">
+          <strong>Digital Video Production (course)</strong>
+        </p><p>Belgrade, Serbia</p>
+      </div><div>
+        <h3>Faculty of Technical Sciences</h3><p class="text-lg">
+          <strong>MSc of Graphic Engineering and Design</strong>
+        </p><p>Novi Sad, Serbia</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Languages</h2>
+    <ul class="flex list-disc flex-col gap-4 px-4">
+      <li><strong>Serbian</strong><span class="ml-2">(native)</span></li>
+      <li><strong>Macedonian</strong><span class="ml-2">(native)</span></li>
+      <li><strong>English</strong><span class="ml-2">(fluent)</span></li>
+    </ul>
+  </section>
+</BaseLayout>

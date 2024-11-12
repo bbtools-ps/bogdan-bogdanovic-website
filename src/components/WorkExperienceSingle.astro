@@ -1,0 +1,52 @@
+---
+import dayjs from "dayjs";
+import "dayjs/locale/sr";
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+interface Props {
+  jobTitle: string;
+  companyName: string;
+  companyLink?: string;
+  description: string[];
+  startDate: Date;
+  endDate?: Date;
+}
+
+const { jobTitle, companyName, companyLink, description, startDate, endDate } =
+  Astro.props;
+---
+
+<div
+  class="grid grid-cols-1 border-b border-dashed border-slate-400 pb-10 pt-10 lg:grid-cols-2"
+>
+  <div>
+    <h3>{jobTitle}</h3>{
+      companyLink ? (
+        <a
+          class="mb-4 inline-block text-xl font-bold text-blue-700 duration-100 hover:text-blue-400 lg:mb-0 dark:text-blue-200 dark:hover:text-blue-400"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.intens.rs/"
+        >
+          {companyName}
+        </a>
+      ) : (
+        <p class="text-xl font-bold">{companyName}</p>
+      )
+    }<p class="opacity-75">
+      <span>{dayjs(startDate).locale(lang).format("MMM YYYY")}</span> - <span
+        >{
+          endDate ? dayjs(endDate).locale(lang).format("MMM YYYY") : t("today")
+        }</span
+      >
+    </p>
+  </div><div>
+    <ul class="list-disc px-4">
+      {description.map((item) => <li class="py-2">{item}</li>)}
+    </ul>
+  </div>
+</div>

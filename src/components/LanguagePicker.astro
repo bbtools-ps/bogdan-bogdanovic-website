@@ -1,0 +1,26 @@
+---
+import { languages } from "../i18n/ui";
+
+const currentPath = Astro.url.pathname;
+---
+
+<ul class="flex">
+  {
+    Object.entries(languages).map(([key, label], index, self) => (
+      <li>
+        <a
+          href={`/${key}/`}
+          class={currentPath.startsWith(`/${key}/`) ? "font-bold" : ""}
+          aria-label={label}
+        >
+          <span aria-hidden="true">{key}</span>
+        </a>
+        {index < self.length - 1 && (
+          <span aria-hidden="true" class="ml-1 mr-2">
+            /
+          </span>
+        )}
+      </li>
+    ))
+  }
+</ul>

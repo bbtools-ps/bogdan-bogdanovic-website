@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+}
+
+@layer base {
+  h1 {
+    @apply mb-6 text-6xl font-bold md:text-7xl;
+  }
+  h2 {
+    @apply mb-4 text-5xl font-medium;
+  }
+  h3 {
+    @apply mb-2 text-3xl font-medium;
+  }
+  p {
+    @apply leading-7;
+  }
+  section {
+    @apply mx-auto mb-24 max-w-4xl px-4 md:mb-40;
+  }
+}
+
+@layer components {
+  .text-link {
+    @apply font-medium text-blue-700 underline underline-offset-4 duration-100 hover:text-blue-400 dark:text-blue-200 dark:hover:text-blue-400;
+  }
+  .button-link {
+    @apply flex gap-2 rounded-lg bg-blue-300 px-4 py-2 duration-100 hover:bg-blue-400 dark:bg-blue-700 dark:hover:bg-blue-800;
+  }
+  .skip-link {
+    @apply absolute -top-20 left-0 h-[1px] w-[1px] overflow-hidden p-1 text-blue-700 dark:text-blue-200;
+  }
+  .skip-link:focus {
+    @apply static h-auto w-auto;
+  }
+}

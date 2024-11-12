@@ -1,0 +1,104 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { Image } from "astro:assets";
+import Icons from "./Icons.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  image: ImageMetadata;
+  tags: string[];
+  infoLink?: string;
+  liveLink?: string;
+  sourceLink?: string;
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { title, description, image, infoLink, liveLink, sourceLink, tags } =
+  Astro.props;
+const projectLink = infoLink || liveLink || ".";
+---
+
+<div class="mb-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
+  <div class="col-span-full mx-auto mb-5 flex">
+    <a
+      rel="noopener noreferrer"
+      target="_blank"
+      class="self-start duration-100 hover:text-blue-700 dark:hover:text-blue-300"
+      href={projectLink}><h3>{title}</h3></a
+    >
+  </div><a
+    class="group mx-auto max-h-[18.75rem] max-w-[25rem] overflow-hidden rounded border-2 border-slate-400"
+    target="_blank"
+    rel="noopener noreferrer"
+    href={projectLink}
+    ><Image
+      alt={title}
+      width="400"
+      height="400"
+      decoding="async"
+      data-nimg="1"
+      class="duration-200 group-hover:scale-110"
+      src={image}
+    /></a
+  ><div>
+    <p class="mb-4">
+      {description}
+    </p><div class="mb-10 flex justify-center gap-4 lg:justify-start">
+      {
+        infoLink && (
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            class="button-link"
+            href={infoLink}
+          >
+            <Icons type="info" />
+            <span aria-hidden="true">Info</span>
+            <span class="sr-only">{`${t("project.checkOut")} ${title}`}</span>
+          </a>
+        )
+      }
+      {
+        liveLink && (
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            class="button-link"
+            href={liveLink}
+          >
+            <Icons type="live" />
+            <span aria-hidden="true">Live</span>
+            <span class="sr-only">{title}</span>
+          </a>
+        )
+      }
+      {
+        sourceLink && (
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            class="button-link"
+            href={sourceLink}
+          >
+            <Icons type="live" />
+            <span aria-hidden="true">Source</span>
+            <span class="sr-only">{title}</span>
+          </a>
+        )
+      }
+    </div><div class="flex flex-wrap gap-2">
+      <ul class="flex flex-wrap gap-2">
+        {
+          tags.map((tag) => (
+            <li class="rounded border border-solid border-slate-400 px-2 py-1">
+              {tag}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</div>
