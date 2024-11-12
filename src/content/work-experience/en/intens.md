@@ -9,3 +9,7 @@ description:
   ]
 startDate: 2022-02-01
 ---
+
+## Frontend Developer
+
+- Developing web applications using React.js, HTML, Javascript and Typescript.

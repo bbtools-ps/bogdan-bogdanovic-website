@@ -11,3 +11,9 @@ description:
   ]
 startDate: 2019-12-01
 ---
+
+## Web Application Developer & Founder of BBTools
+
+- Working with HTML, CSS, React.js, Vue.js, Node.js, BatchScript, MaxScript and Vanilla JavaScript.
+- Writing MaxScripts for 3ds Max.
+- Writing scripts and extensions (web applications) for Photoshop.

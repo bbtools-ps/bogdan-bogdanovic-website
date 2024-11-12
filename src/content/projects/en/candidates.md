@@ -15,3 +15,7 @@ tags:
   ]
 liveLink: "https://candidates-hr-platform-next.vercel.app/"
 ---
+
+## Candidates - HR Assistance Platform
+
+Full-stack web application for every HR professional. Some of the features: search candidate by name or by skill, add/remove/edit candidate, etc.
