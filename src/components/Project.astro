@@ -24,16 +24,17 @@ const projectLink = infoLink || liveLink || ".";
 <div class="mb-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
   <div class="col-span-full mx-auto mb-5 flex">
     <a
-      rel="noopener noreferrer"
+      href={projectLink}
       target="_blank"
+      rel="noopener noreferrer"
       class="self-start duration-100 hover:text-blue-700 dark:hover:text-blue-300"
-      href={projectLink}><h3>{title}</h3></a
+      ><h3>{title}</h3></a
     >
   </div><a
-    class="group mx-auto max-h-[18.75rem] max-w-[25rem] overflow-hidden rounded border-2 border-slate-400"
+    href={projectLink}
     target="_blank"
     rel="noopener noreferrer"
-    href={projectLink}
+    class="group mx-auto max-h-[18.75rem] max-w-[25rem] overflow-hidden rounded border-2 border-slate-400"
     ><Image
       alt={title}
       width="400"
@@ -50,10 +51,10 @@ const projectLink = infoLink || liveLink || ".";
       {
         infoLink && (
           <a
-            rel="noopener noreferrer"
-            target="_blank"
-            class="button-link"
             href={infoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-link"
           >
             <Icons type="info" />
             <span aria-hidden="true">Info</span>
@@ -64,10 +65,10 @@ const projectLink = infoLink || liveLink || ".";
       {
         liveLink && (
           <a
-            rel="noopener noreferrer"
-            target="_blank"
-            class="button-link"
             href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-link"
           >
             <Icons type="live" />
             <span aria-hidden="true">Live</span>
@@ -78,10 +79,10 @@ const projectLink = infoLink || liveLink || ".";
       {
         sourceLink && (
           <a
-            rel="noopener noreferrer"
-            target="_blank"
-            class="button-link"
             href={sourceLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-link"
           >
             <Icons type="live" />
             <span aria-hidden="true">Source</span>
