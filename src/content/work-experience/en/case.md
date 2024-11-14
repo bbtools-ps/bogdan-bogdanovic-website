@@ -13,3 +13,10 @@ description:
 startDate: 2016-05-01
 endDate: 2018-10-01
 ---
+
+## CG Artist
+
+- Post-production for renderings in architectural visualization.
+- Green screen compositing and post-production in videos.
+- Short video animations.
+- Making scripts and extensions for Adobe Photoshop (HTML, CSS, JavaScript, ExtendScript, Vue.js, etc.).

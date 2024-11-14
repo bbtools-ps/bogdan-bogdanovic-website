@@ -15,3 +15,7 @@ tags:
   ]
 liveLink: "https://candidates-hr-platform-next.vercel.app/"
 ---
+
+## Kandidati - Platforma za HR
+
+Full-stack veb aplikacija za svakog HR profesionalca. Neke od funkcija: pretraga kandidata po imenu ili veštini, dodavanje/uklanjanje/menjanje kandidata itd.

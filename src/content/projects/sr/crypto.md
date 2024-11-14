@@ -15,3 +15,7 @@ tags:
 liveLink: "https://bbtools-crypto.netlify.app/"
 sourceLink: "https://github.com/bbtools-ps/crypto"
 ---
+
+## Crypto - Zbirka šifara
+
+Crypto je zbirka šifara. Koristi MUI dizajn sistem i modernu JavaScript sintaksu.
