@@ -10,7 +10,7 @@ const currentPath = Astro.url.pathname;
       <li>
         <a
           href={`/${key}/`}
-          class={currentPath.startsWith(`/${key}/`) ? "font-bold" : ""}
+          class={`p-2 ${currentPath.startsWith(`/${key}/`) ? "font-bold" : ""}`}
           aria-label={label}
         >
           <span aria-hidden="true">{key}</span>
