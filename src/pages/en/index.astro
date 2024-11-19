@@ -4,7 +4,12 @@ import WorkExperience from "@/components/WorkExperience.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Bogdan Bogdanovic">
+<BaseLayout
+  title="Bogdan Bogdanovic"
+  hasSkipLink
+  skipLinkHref="#projects"
+  skipLinkLabel="Projects"
+>
   <section>
     <h1 class="text-center">Bogdan Bogdanovic</h1>
     <h2 class="text-center text-4xl">
@@ -29,7 +34,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
       > if you have any questions. Thank you for your time!
     </p>
   </section>
-  <section>
+  <section id="projects">
     <h2>Featured Projects</h2>
     <p class="mb-10 md:mb-20">
       Check out my <a

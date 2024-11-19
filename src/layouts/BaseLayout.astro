@@ -5,15 +5,29 @@ import Header from "@/components/Header.astro";
 import { Image } from "astro:assets";
 import bgImage from "../images/bg.jpg";
 import "../styles/base.css";
+import SkipLink from "@/components/SkipLink.astro";
 
-interface Props {
-  title: string;
-  description?: string;
-}
+type Props = (
+  | {
+      hasSkipLink?: false;
+      skipLinkLabel?: undefined;
+      skipLinkHref?: undefined;
+    }
+  | {
+      hasSkipLink: true;
+      skipLinkLabel: string;
+      skipLinkHref: string;
+    }
+) & { title: string; description?: string };
 
 const lang = getLangFromUrl(Astro.url);
-const { title, description = "Bogdan Bogdanovic personal portfolio website" } =
-  Astro.props;
+const {
+  title,
+  description = "Bogdan Bogdanovic personal portfolio website",
+  hasSkipLink,
+  skipLinkHref,
+  skipLinkLabel,
+} = Astro.props;
 ---
 
 <html lang={lang}>
@@ -38,6 +52,7 @@ const { title, description = "Bogdan Bogdanovic personal portfolio website" } =
     <title>{title}</title>
   </head>
   <body class="bg-slate-100 dark:bg-slate-800 dark:text-white">
+    {hasSkipLink && <SkipLink label={skipLinkLabel} href={skipLinkHref} />}
     <Header />
     <main>
       <slot />
