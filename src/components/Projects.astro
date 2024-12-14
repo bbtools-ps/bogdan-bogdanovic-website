@@ -5,8 +5,8 @@ import Project from "./Project.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
-const projects = await getCollection("projects", ({ slug }) =>
-  slug.startsWith(lang),
+const projects = await getCollection("projects", ({ id }) =>
+  id.startsWith(lang),
 );
 const sortedProjects = projects.sort(
   (a, b) => b.data.sortOrder - a.data.sortOrder,

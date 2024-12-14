@@ -5,8 +5,8 @@ import WorkExperienceSingle from "./WorkExperienceSingle.astro";
 
 const lang = getLangFromUrl(Astro.url);
 
-const workExperience = await getCollection("work-experience", ({ slug }) =>
-  slug.startsWith(lang),
+const workExperience = await getCollection("work-experience", ({ id }) =>
+  id.startsWith(lang),
 );
 const sortedWorkExperience = workExperience.sort(
   (a, b) => b.data.sortOrder - a.data.sortOrder,
