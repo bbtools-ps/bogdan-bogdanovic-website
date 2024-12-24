@@ -1,9 +1,17 @@
 ---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<button type="button" id="theme-toggle" aria-label="Switch theme">
-  <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<button type="button" id="theme-toggle" aria-label={t("switchTheme")}>
+  <svg
+    width="30px"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
     <path
       class="sun"
       fill-rule="evenodd"
