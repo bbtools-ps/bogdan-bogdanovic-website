@@ -1,14 +1,15 @@
 ---
 sortOrder: 8
 title: "BBTools - ekstenzije za Photoshop"
-description: "Photoshop ekstenzije napravljene za digitalne umetnike."
+description: "Photoshop ekstenzije za digitalne umetnike."
 image: "../images/bbtools.jpg"
 tags:
   [
     "Next.js",
     "NextAuth",
     "TypeScript",
-    "SCSS",
+    "tRPC",
+    "TailwindCSS",
     "NextUI",
     "Vitest",
     "React Query",

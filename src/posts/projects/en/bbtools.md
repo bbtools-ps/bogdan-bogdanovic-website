@@ -1,14 +1,15 @@
 ---
 sortOrder: 8
 title: "BBTools - Photoshop extensions"
-description: "Photoshop extensions made for artists."
+description: "Photoshop extensions for digital artists."
 image: "../images/bbtools.jpg"
 tags:
   [
     "Next.js",
     "NextAuth",
     "TypeScript",
-    "SCSS",
+    "tRPC",
+    "TailwindCSS",
     "NextUI",
     "Vitest",
     "React Query",
