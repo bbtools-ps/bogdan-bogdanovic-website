@@ -1,7 +1,7 @@
 ---
 sortOrder: 6
 title: "Crypto - Zbirka šifara"
-description: "Crypto je zbirka šifara. Koristi MUI dizajn sistem i modernu JavaScript sintaksu."
+description: "Ovaj projekat je izrađen korišćenjem React-router-a (framework), Node.js-a (za generisanje prilagođenog šifrovanog sistema sa emotikonima) i MUI dizajn sistema."
 image: "../images/crypto.jpg"
 tags:
   [
@@ -19,4 +19,4 @@ sourceLink: "https://github.com/bbtools-ps/crypto"
 
 ## Crypto - Zbirka šifara
 
-Crypto je zbirka šifara. Koristi MUI dizajn sistem i modernu JavaScript sintaksu.
+Ovaj projekat je izrađen korišćenjem React-router-a (framework), Node.js-a (za generisanje prilagođenog šifrovanog sistema sa emotikonima) i MUI dizajn sistema.

@@ -1,7 +1,7 @@
 ---
 sortOrder: 6
 title: "Crypto - A collection of ciphers"
-description: "Crypto is a collection of ciphers. Uses MUI design system and modern JavaScript syntax."
+description: "This project is built using a React-router (the framework version), Node.js (for generating a custom emoji cipher) and a MUI design system."
 image: "../images/crypto.jpg"
 tags:
   [
@@ -19,4 +19,4 @@ sourceLink: "https://github.com/bbtools-ps/crypto"
 
 ## Crypto - A collection of ciphers
 
-Crypto is a collection of ciphers. Uses MUI design system and modern JavaScript syntax.
+This project is built using a React-router (the framework version), Node.js (for generating a custom emoji cipher) and a MUI design system.
