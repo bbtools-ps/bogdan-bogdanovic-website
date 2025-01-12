@@ -9,6 +9,7 @@ tags:
     "Server components/actions",
     "TypeScript",
     "TailwindCSS",
+    "NextAuth",
     "MongoDB",
     "Vitest",
     "Cypress",
