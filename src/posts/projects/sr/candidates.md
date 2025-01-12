@@ -1,7 +1,7 @@
 ---
 sortOrder: 7
 title: "Kandidati - Platforma za HR"
-description: "Full-stack veb aplikacija za svakog HR profesionalca. Neke od funkcija: pretraga kandidata po imenu ili veštini, dodavanje/uklanjanje/menjanje kandidata itd."
+description: "Full-stack veb aplikacija za svakog HR profesionalca. Neke od funkcionalnosti uključuju mogućnost pretrage kandidata po imenu ili veštini, dodavanje novih kandidata, izmenu ili brisanje postojećih, kao i označavanje kandidata kao omiljenih."
 image: "../images/candidates.jpg"
 tags:
   [
