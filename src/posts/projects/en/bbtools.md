@@ -20,8 +20,7 @@ tags:
     "Cypress",
     "React testing library",
   ]
-
-infoLink: "https://bbtools.io/"
+liveLink: "https://bbtools.io/"
 ---
 
 ## BBTools - Photoshop extensions
