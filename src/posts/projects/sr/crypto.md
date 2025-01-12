@@ -5,8 +5,9 @@ description: "Crypto je zbirka šifara. Koristi MUI dizajn sistem i modernu Java
 image: "../images/crypto.jpg"
 tags:
   [
-    "React.js",
+    "React router (framework)",
     "TypeScript",
+    "TailwindCSS",
     "Node.js",
     "MUI",
     "Vitest",

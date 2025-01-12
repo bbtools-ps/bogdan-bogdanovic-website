@@ -5,18 +5,18 @@ description: "Photoshop ekstenzije za digitalne umetnike."
 image: "../images/bbtools.jpg"
 tags:
   [
-    "Next.js",
-    "NextAuth",
+    "Next.js (Pages router)",
     "TypeScript",
-    "tRPC",
     "TailwindCSS",
-    "NextUI",
-    "Vitest",
+    "tRPC",
     "React Query",
+    "NextAuth",
+    "NextUI",
     "MongoDB",
     "Cloudinary",
     "Mailgun",
     "Google recaptcha",
+    "Vitest",
     "Cypress",
     "React testing library",
   ]

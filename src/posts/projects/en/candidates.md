@@ -5,9 +5,10 @@ description: "Full-stack web application for every HR professional. Some of the 
 image: "../images/candidates.jpg"
 tags:
   [
-    "TailwindCSS",
+    "Next.js (App router)",
+    "Server components/actions",
     "TypeScript",
-    "Next.js (14)",
+    "TailwindCSS",
     "MongoDB",
     "Vitest",
     "Cypress",

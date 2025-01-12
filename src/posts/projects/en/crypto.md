@@ -5,8 +5,9 @@ description: "Crypto is a collection of ciphers. Uses MUI design system and mode
 image: "../images/crypto.jpg"
 tags:
   [
-    "React.js",
+    "React router (framework)",
     "TypeScript",
+    "TailwindCSS",
     "Node.js",
     "MUI",
     "Vitest",
