@@ -1,7 +1,7 @@
 ---
 sortOrder: 8
 title: "BBTools - ekstenzije za Photoshop"
-description: "Photoshop ekstenzije za digitalne umetnike."
+description: "Full-stack veb aplikacija koja uključuje marketinški prikaz sajta i prilagođeni CMS. Cela aplikacija je izrađena korišćenjem Next.js framework-a."
 image: "../images/bbtools.jpg"
 tags:
   [
@@ -26,4 +26,4 @@ liveLink: "https://bbtools.io/"
 
 ## BBTools - ekstenzije za Photoshop
 
-Photoshop ekstenzije napravljene za digitalne umetnike.
+Full-stack veb aplikacija koja uključuje marketinški prikaz sajta i prilagođeni CMS. Cela aplikacija je izrađena korišćenjem Next.js framework-a.
