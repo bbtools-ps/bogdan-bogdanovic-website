@@ -12,6 +12,7 @@ tags:
     "React Query",
     "NextAuth",
     "NextUI",
+    "Prisma",
     "MongoDB",
     "Cloudinary",
     "Mailgun",

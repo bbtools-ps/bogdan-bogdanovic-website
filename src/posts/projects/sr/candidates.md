@@ -10,6 +10,7 @@ tags:
     "TypeScript",
     "TailwindCSS",
     "NextAuth",
+    "Prisma",
     "MongoDB",
     "Vitest",
     "Cypress",
