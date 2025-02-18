@@ -5,7 +5,12 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<button type="button" id="theme-toggle" aria-label={t("switchTheme")}>
+<button
+  type="button"
+  id="theme-toggle"
+  class="hover:opacity-50"
+  aria-label={t("switchTheme")}
+>
   <svg
     width="30px"
     xmlns="http://www.w3.org/2000/svg"
