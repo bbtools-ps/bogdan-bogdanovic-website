@@ -34,7 +34,7 @@ const projectLink = infoLink || liveLink || ".";
     href={projectLink}
     target="_blank"
     rel="noopener noreferrer"
-    class="group mx-auto max-h-[18.75rem] max-w-[25rem] overflow-hidden rounded border-2 border-slate-400"
+    class="group mx-auto max-h-[18.75rem] max-w-[25rem] overflow-hidden rounded-sm border-2 border-slate-400"
     ><Image
       alt={title}
       width="400"
@@ -94,7 +94,7 @@ const projectLink = infoLink || liveLink || ".";
       <ul class="flex flex-wrap gap-2">
         {
           tags.map((tag) => (
-            <li class="rounded border border-solid border-slate-400 px-2 py-1">
+            <li class="rounded-sm border border-solid border-slate-400 px-2 py-1">
               {tag}
             </li>
           ))
