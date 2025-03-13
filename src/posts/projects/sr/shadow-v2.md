@@ -1,6 +1,6 @@
 ---
 sortOrder: 5
-title: "Shadow 2.0 - ekstenzija za Photoshop"
+title: "Shadow 2.0 - plugin za Photoshop"
 description: "Plugin za Adobe Photoshop koji dodaje realistične senke objektima u uspravnom položaju."
 image: "../images/shadow-v2.jpg"
 tags: ["React", "TypeScript", "UXP API", "i18n", "Adobe Spectrum design system"]

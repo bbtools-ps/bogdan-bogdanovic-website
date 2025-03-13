@@ -1,5 +1,5 @@
 ---
-sortOrder: 2
+sortOrder: 6
 title: "FoodHeaven - Aplikacija za naručivanje hrane"
 description: "Mala veb aplikacija za naručivanje hrane. Neke od funkcija: dodajte obrok u korpu (uključujući količinu), dodajte/uklonite obroke iz korpe, dodajte dodatnu stavku za svaki obrok u korpi."
 image: "../images/food-heaven.jpg"

@@ -1,5 +1,5 @@
 ---
-sortOrder: 8
+sortOrder: 1
 title: "BBTools - ekstenzije za Photoshop"
 description: "Full-stack veb aplikacija koja uključuje marketinški prikaz sajta i prilagođeni CMS. Cela aplikacija je izrađena korišćenjem Next.js framework-a."
 image: "../images/bbtools.jpg"

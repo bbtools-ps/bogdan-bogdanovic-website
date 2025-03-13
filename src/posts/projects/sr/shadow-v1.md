@@ -1,9 +1,9 @@
 ---
-sortOrder: 3
+sortOrder: 4
 title: "Shadow 1.0 - esktenzija za Photoshop"
 description: "Shadow (Senka) je Photoshop ekstenzija za dodavanje realističnih senki za stojeće objekte."
 image: "../images/shadow-v1.jpg"
-tags: ["HTML", "CSS", "JavaScript (Vue.js)"]
+tags: ["Vue.js", "HTML", "CSS", "ExtendScript"]
 infoLink: "https://exchange.adobe.com/apps/cc/102891/shadow"
 ---
 
