@@ -11,7 +11,7 @@ tags:
     "tRPC",
     "React Query",
     "NextAuth",
-    "NextUI",
+    "HeroUI",
     "Prisma",
     "MongoDB",
     "Cloudinary",
