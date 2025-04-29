@@ -1,5 +1,5 @@
 ---
-sortOrder: 4
+sortOrder: 5
 title: "Shadow 1.0 - Extension for Photoshop"
 description: "Shadow is a Photoshop extension for adding realistic shadows for standing objects."
 image: "../images/shadow-v1.jpg"

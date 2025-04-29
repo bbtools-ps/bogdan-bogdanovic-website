@@ -13,13 +13,14 @@ tags:
     "NextAuth",
     "HeroUI",
     "Prisma",
+    "Zod",
     "MongoDB",
     "Cloudinary",
     "Mailgun",
-    "Google recaptcha",
+    "Google ReCaptcha",
     "Vitest",
     "Cypress",
-    "React testing library",
+    "React Testing Library",
   ]
 liveLink: "https://bbtools.io/"
 ---
