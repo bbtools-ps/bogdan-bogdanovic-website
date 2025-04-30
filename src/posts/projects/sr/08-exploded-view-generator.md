@@ -1,5 +1,5 @@
 ---
-sortOrder: 7
+sortOrder: 8
 title: "Exploded View Generator - 3ds Max skript"
 description: "Ovaj skript stvara efekat eksplodiranog pogleda skaliranjem generisanog glavnog kontrolera."
 image: "../images/exploded-view-generator.png"

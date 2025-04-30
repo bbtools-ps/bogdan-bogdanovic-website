@@ -1,5 +1,5 @@
 ---
-sortOrder: 6
+sortOrder: 7
 title: "Shadow 2.0 - plugin za Photoshop"
 description: "Plugin za Adobe Photoshop koji dodaje realistične senke objektima u uspravnom položaju."
 image: "../images/shadow-v2.jpg"

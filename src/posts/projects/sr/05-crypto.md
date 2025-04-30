@@ -1,5 +1,5 @@
 ---
-sortOrder: 4
+sortOrder: 5
 title: "Crypto - Zbirka šifara"
 description: "Ovaj projekat je izrađen korišćenjem React-router-a (framework), Node.js-a (za generisanje prilagođenog šifrovanog sistema sa emotikonima) i MUI dizajn sistema."
 image: "../images/crypto.jpg"
