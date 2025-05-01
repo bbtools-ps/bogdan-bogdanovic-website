@@ -10,4 +10,4 @@ sourceLink: "https://github.com/bbtools-ps/alt-text-generator"
 
 ## Generator alt teksta za slike (veštačka inteligencija)
 
-React application that generates alt tags for images using AI. It integrates with LM Studio to process images and provide accessible alt text descriptions using Google's Gemma-3 model (specifically 'gemma-3-4b-it-qat').
+React application that generates alt text for images using AI. It integrates with LM Studio to process images and provide accessible alt text descriptions using Google's Gemma-3 model (specifically 'gemma-3-4b-it-qat').
