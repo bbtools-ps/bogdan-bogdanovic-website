@@ -18,7 +18,7 @@ const t = useTranslations(lang);
 
 const { title, description, image, infoLink, liveLink, sourceLink, tags } =
   Astro.props;
-const projectLink = infoLink || liveLink || ".";
+const projectLink = infoLink || liveLink || sourceLink || ".";
 ---
 
 <div class="mb-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
