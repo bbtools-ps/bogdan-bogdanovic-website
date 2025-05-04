@@ -13,6 +13,7 @@ const projectsCollection = defineCollection({
       infoLink: z.string().optional(),
       liveLink: z.string().optional(),
       sourceLink: z.string().optional(),
+      designLink: z.string().optional(),
     }),
 });
 

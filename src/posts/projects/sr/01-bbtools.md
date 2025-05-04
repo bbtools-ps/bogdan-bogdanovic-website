@@ -23,6 +23,7 @@ tags:
     "React Testing Library",
   ]
 liveLink: "https://bbtools.io/"
+designLink: "https://www.figma.com/design/shyyE8lHg2m04bk9Hb3xkG/BBTools-website?node-id=0-1&t=7U254uKEBCwp9hlv-1"
 ---
 
 ## BBTools - ekstenzije za Photoshop

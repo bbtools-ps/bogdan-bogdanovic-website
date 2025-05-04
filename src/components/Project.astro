@@ -11,13 +11,22 @@ interface Props {
   infoLink?: string;
   liveLink?: string;
   sourceLink?: string;
+  designLink?: string;
 }
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const { title, description, image, infoLink, liveLink, sourceLink, tags } =
-  Astro.props;
+const {
+  title,
+  description,
+  image,
+  infoLink,
+  liveLink,
+  sourceLink,
+  designLink,
+  tags,
+} = Astro.props;
 const projectLink = infoLink || liveLink || sourceLink || ".";
 ---
 
@@ -47,7 +56,9 @@ const projectLink = infoLink || liveLink || sourceLink || ".";
   ><div>
     <p class="mb-4">
       {description}
-    </p><div class="mb-10 flex justify-center gap-4 lg:justify-start">
+    </p><div
+      class="mb-10 flex flex-col justify-center gap-4 md:flex-row lg:justify-start"
+    >
       {
         infoLink && (
           <a
@@ -57,7 +68,7 @@ const projectLink = infoLink || liveLink || sourceLink || ".";
             class="button-link"
           >
             <Icons icon="info" />
-            <span aria-hidden="true">Info</span>
+            <span aria-hidden="true">{t("project.info")}</span>
             <span class="sr-only">{`${t("project.checkOut")} ${title}`}</span>
           </a>
         )
@@ -71,7 +82,7 @@ const projectLink = infoLink || liveLink || sourceLink || ".";
             class="button-link"
           >
             <Icons icon="live" />
-            <span aria-hidden="true">Live</span>
+            <span aria-hidden="true">{t("project.live")}</span>
             <span class="sr-only">{title}</span>
           </a>
         )
@@ -85,7 +96,21 @@ const projectLink = infoLink || liveLink || sourceLink || ".";
             class="button-link"
           >
             <Icons icon="code" />
-            <span aria-hidden="true">Source</span>
+            <span aria-hidden="true">{t("project.sourceCode")}</span>
+            <span class="sr-only">{title}</span>
+          </a>
+        )
+      }
+      {
+        designLink && (
+          <a
+            href={designLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button-link"
+          >
+            <Icons icon="brush" />
+            <span aria-hidden="true">{t("project.design")}</span>
             <span class="sr-only">{title}</span>
           </a>
         )
