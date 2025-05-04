@@ -83,7 +83,7 @@ const projectLink = infoLink || liveLink || sourceLink || ".";
           >
             <Icons icon="live" />
             <span aria-hidden="true">{t("project.live")}</span>
-            <span class="sr-only">{title}</span>
+            <span class="sr-only">{`${t("project.checkOut")} ${title}`}</span>
           </a>
         )
       }
@@ -97,7 +97,7 @@ const projectLink = infoLink || liveLink || sourceLink || ".";
           >
             <Icons icon="code" />
             <span aria-hidden="true">{t("project.sourceCode")}</span>
-            <span class="sr-only">{title}</span>
+            <span class="sr-only">{t("project.checkOutSourceCode")}</span>
           </a>
         )
       }
@@ -111,7 +111,7 @@ const projectLink = infoLink || liveLink || sourceLink || ".";
           >
             <Icons icon="brush" />
             <span aria-hidden="true">{t("project.design")}</span>
-            <span class="sr-only">{title}</span>
+            <span class="sr-only">{t("project.checkOutDesign")}</span>
           </a>
         )
       }
