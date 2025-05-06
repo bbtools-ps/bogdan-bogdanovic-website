@@ -18,7 +18,7 @@ tags:
     "Cypress",
     "React Testing Library",
   ]
-liveLink: "https://www.intens.rs/"
+liveLink: "https://intens-tech.com/"
 ---
 
 ## Intens vebsajt
