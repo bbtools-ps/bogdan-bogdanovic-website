@@ -1,5 +1,5 @@
 ---
-sortOrder: 7
+sortOrder: 8
 title: "Shadow 2.0 - Plugin for Photoshop"
 description: "Plugin for Adobe Photoshop that adds lifelike shadows to objects in a standing position."
 image: "../images/shadow-v2.jpg"

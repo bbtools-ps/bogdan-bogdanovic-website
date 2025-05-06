@@ -1,5 +1,5 @@
 ---
-sortOrder: 5
+sortOrder: 6
 title: "Crypto - A collection of ciphers"
 description: "This project is built using a React-router (the framework version), Node.js (for generating a custom emoji cipher) and a MUI design system."
 image: "../images/crypto.jpg"

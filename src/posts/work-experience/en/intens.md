@@ -2,7 +2,7 @@
 sortOrder: 5
 jobTitle: "Frontend Developer"
 companyName: "Intens"
-companyLink: "https://www.intens.rs/"
+companyLink: "https://intens-tech.com/"
 description:
   [
     "Developing web applications using React.js, HTML, Javascript and Typescript.",
