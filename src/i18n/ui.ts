@@ -18,6 +18,7 @@ export const ui = {
     "project.design": "Design",
     "footer.title": "Contact / Social Media",
     "footer.sourceCode": "source code",
+    "footer.design": "design",
   },
   sr: {
     switchTheme: "Promeni temu",
@@ -31,6 +32,7 @@ export const ui = {
     "project.design": "Dizajn",
     "footer.title": "Kontakt / društveni mediji",
     "footer.sourceCode": "izvorni kod",
+    "footer.design": "dizajn",
   },
 } as const;
 
