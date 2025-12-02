@@ -1,5 +1,5 @@
 ---
-sortOrder: 10
+sortOrder: 11
 title: "The river (photography)"
 description: "Photograph of a man fishing on the river in the sunset."
 image: "../images/river.jpg"

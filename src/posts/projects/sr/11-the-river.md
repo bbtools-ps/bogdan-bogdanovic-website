@@ -1,5 +1,5 @@
 ---
-sortOrder: 10
+sortOrder: 11
 title: "Reka (fotografija)"
 description: "Fotografija čoveka koji peca na reci u zalasku sunca."
 image: "../images/river.jpg"
