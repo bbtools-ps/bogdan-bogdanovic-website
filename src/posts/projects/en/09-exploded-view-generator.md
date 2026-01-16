@@ -1,5 +1,4 @@
 ---
-sortOrder: 9
 title: "Exploded View Generator - 3ds Max script"
 description: "This script creates Exploded View effect by scaling the generated master controller."
 image: "../images/exploded-view-generator.png"

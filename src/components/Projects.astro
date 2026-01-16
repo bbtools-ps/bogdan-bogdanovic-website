@@ -8,9 +8,11 @@ const lang = getLangFromUrl(Astro.url);
 const projects = await getCollection("projects", ({ id }) =>
   id.startsWith(lang),
 );
-const sortedProjects = projects.sort(
-  (a, b) => a.data.sortOrder - b.data.sortOrder,
-);
+const sortedProjects = projects.sort((a, b) => {
+  const aNum = parseInt(a.id.split("/").pop() || "0");
+  const bNum = parseInt(b.id.split("/").pop() || "0");
+  return aNum - bNum;
+});
 ---
 
 {

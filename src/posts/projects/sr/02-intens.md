@@ -1,5 +1,4 @@
 ---
-sortOrder: 2
 title: "Intens vebsajt"
 description: "Kao deo tima, napravili smo ovu full-stack veb aplikaciju koja uključuje marketinški prikaz sajta i prilagođeni CMS. Cela aplikacija je izgrađena koristeći Next.js."
 image: "../images/intens.jpg"

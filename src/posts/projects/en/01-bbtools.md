@@ -1,5 +1,4 @@
 ---
-sortOrder: 1
 title: "BBTools - Photoshop extensions"
 description: "Full-stack web application that includes a marketing view of the website and a custom-made CMS. The entire application is built using the Next.js framework."
 image: "../images/bbtools.jpg"

@@ -1,5 +1,4 @@
 ---
-sortOrder: 4
 title: "Candidates - HR Assistance Platform (Client-only)"
 description: "Client-only web application for every HR professional. Some of the features include the ability to search for candidates by name or skill, add new candidates, edit or remove existing ones, and mark candidates as favorites."
 image: "../images/candidates.jpg"

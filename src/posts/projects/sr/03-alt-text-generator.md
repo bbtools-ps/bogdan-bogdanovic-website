@@ -1,5 +1,4 @@
 ---
-sortOrder: 3
 title: "Generator alt teksta za slike (veštačka inteligencija)"
 description: "React aplikacija koja radi lokalno i generiše alt oznake za slike pomoću veštačke inteligencije. Integrisana je sa LM Studio kako bi obrađivala slike i pružala pristupačne opise alt teksta koristeći Google-ov Gemma-3 model (konkretno 'gemma-3-4b-it-qat')."
 image: "../images/alt-text-generator.png"
