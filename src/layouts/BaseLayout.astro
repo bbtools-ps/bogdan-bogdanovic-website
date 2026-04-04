@@ -64,7 +64,7 @@ const {
   <body class="bg-slate-100 dark:bg-slate-800 dark:text-white">
     {hasSkipLink && <SkipLink label={skipLinkLabel} href={skipLinkHref} />}
     <Header />
-    <main>
+    <main class="flex flex-1 flex-col">
       <slot />
     </main>
     <Footer />
@@ -74,7 +74,7 @@ const {
       >
       </div>
       <div
-        class="absolute h-full w-full overflow-auto bg-gradient-to-t from-slate-100/50 dark:from-slate-900/50"
+        class="absolute h-full w-full overflow-auto bg-linear-to-t from-slate-100/50 dark:from-slate-900/50"
       >
       </div>
       <Image src={bgImage} alt="" class="h-full w-full object-cover" />

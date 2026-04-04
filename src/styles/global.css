@@ -6,6 +6,12 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+body {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
 h1,
 h2,
 h3 {
