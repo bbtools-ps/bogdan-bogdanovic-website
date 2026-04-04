@@ -40,7 +40,9 @@ const { jobTitle, companyName, companyLink, description, startDate, endDate } =
     }<p class="opacity-75">
       <span>{dayjs(startDate).locale(lang).format("MMM YYYY")}</span> - <span
         >{
-          endDate ? dayjs(endDate).locale(lang).format("MMM YYYY") : t("today")
+          endDate
+            ? dayjs(endDate).locale(lang).format("MMM YYYY")
+            : t("common.today")
         }</span
       >
     </p>
