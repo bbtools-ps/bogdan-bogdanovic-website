@@ -7,7 +7,7 @@ export const defaultLang = "en";
 
 export const translations = {
   en: {
-    "common.switchTheme": "Switch theme",
+    "common.darkTheme": "Dark theme",
     "common.today": "Today",
     "notFound.title": "Page not found",
     "notFound.eyebrow": "404",
@@ -27,7 +27,7 @@ export const translations = {
     "footer.design": "design",
   },
   sr: {
-    "common.switchTheme": "Promeni temu",
+    "common.darkTheme": "Tamna tema",
     "common.today": "Danas",
     "notFound.title": "Stranica nije pronađena",
     "notFound.eyebrow": "404",
