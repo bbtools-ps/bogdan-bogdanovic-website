@@ -1,27 +1,54 @@
 ---
-import { getLangFromUrl } from "@/i18n/utils";
-import { getCollection } from "astro:content";
-import WorkExperienceSingle from "./WorkExperienceSingle.astro";
+import dayjs from "dayjs";
+import "dayjs/locale/sr";
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
-const workExperience = await getCollection("work-experience", ({ id }) =>
-  id.startsWith(lang),
-);
-const sortedWorkExperience = workExperience.sort(
-  (a, b) => b.data.sortOrder - a.data.sortOrder,
-);
+interface Props {
+  jobTitle: string;
+  companyName: string;
+  companyLink?: string;
+  description: string[];
+  startDate: Date;
+  endDate?: Date;
+}
+
+const { jobTitle, companyName, companyLink, description, startDate, endDate } =
+  Astro.props;
 ---
 
-{
-  sortedWorkExperience.map(({ data }) => (
-    <WorkExperienceSingle
-      jobTitle={data.jobTitle}
-      companyName={data.companyName}
-      companyLink={data.companyLink}
-      description={data.description}
-      startDate={data.startDate}
-      endDate={data.endDate}
-    />
-  ))
-}
+<div
+  class="grid grid-cols-1 border-b border-dashed border-slate-400 pt-10 pb-10 lg:grid-cols-2"
+>
+  <div>
+    <h3>{jobTitle}</h3>{
+      companyLink ? (
+        <a
+          href={companyLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mb-4 inline-block text-xl font-bold text-blue-700 duration-100 hover:text-blue-400 lg:mb-0 dark:text-blue-200 dark:hover:text-blue-400"
+        >
+          {companyName}
+        </a>
+      ) : (
+        <p class="text-xl font-bold">{companyName}</p>
+      )
+    }<p class="opacity-75">
+      <span>{dayjs(startDate).locale(lang).format("MMM YYYY")}</span> - <span
+        >{
+          endDate
+            ? dayjs(endDate).locale(lang).format("MMM YYYY")
+            : t("common.today")
+        }</span
+      >
+    </p>
+  </div><div>
+    <ul class="list-disc px-4">
+      {description.map((item) => <li class="py-2">{item}</li>)}
+    </ul>
+  </div>
+</div>
