@@ -1,5 +1,29 @@
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
+
+vi.mock("astro:content", () => ({
+  getCollection: vi.fn(async () => [
+    {
+      id: "en/1",
+      data: {
+        title: "Project One",
+        description: "First project",
+        image: { src: "/one.png", width: 100, height: 100, format: "png" },
+        tags: ["Astro", "TypeScript"],
+      },
+    },
+    {
+      id: "en/2",
+      data: {
+        title: "Project Two",
+        description: "Second project",
+        image: { src: "/two.png", width: 100, height: 100, format: "png" },
+        tags: ["Astro"],
+      },
+    },
+  ]),
+}));
+
 import ProjectList from "./ProjectList.astro";
 
 describe("ProjectList", () => {
