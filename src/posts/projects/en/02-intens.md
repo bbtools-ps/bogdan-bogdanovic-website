@@ -4,6 +4,7 @@ description: "As a part of a team, we made this full-stack web application that 
 image: "../images/intens.jpg"
 tags:
   [
+    "React",
     "Next.js (App router)",
     "TypeScript",
     "TailwindCSS",

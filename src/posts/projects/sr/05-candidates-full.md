@@ -4,6 +4,7 @@ description: "Full-stack veb aplikacija za svakog HR profesionalca. Neke od funk
 image: "../images/candidates.jpg"
 tags:
   [
+    "React",
     "Next.js (App router)",
     "Server components/actions",
     "TypeScript",

@@ -4,6 +4,7 @@ description: "Full-stack veb aplikacija koja uključuje marketinški prikaz sajt
 image: "../images/bbtools.jpg"
 tags:
   [
+    "React",
     "Next.js (Pages router)",
     "TypeScript",
     "TailwindCSS",

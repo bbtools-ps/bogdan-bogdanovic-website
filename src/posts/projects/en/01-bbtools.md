@@ -4,6 +4,7 @@ description: "Full-stack web application that includes a marketing view of the w
 image: "../images/bbtools.jpg"
 tags:
   [
+    "React",
     "Next.js (Pages router)",
     "TypeScript",
     "TailwindCSS",

@@ -4,6 +4,7 @@ description: "Kao deo tima, napravili smo ovu full-stack veb aplikaciju koja ukl
 image: "../images/intens.jpg"
 tags:
   [
+    "React",
     "Next.js (App router)",
     "TypeScript",
     "TailwindCSS",

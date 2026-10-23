@@ -4,6 +4,7 @@ description: "This project is built using a React-router (the framework version)
 image: "../images/crypto.jpg"
 tags:
   [
+    "React",
     "React Router (framework)",
     "TypeScript",
     "TailwindCSS",

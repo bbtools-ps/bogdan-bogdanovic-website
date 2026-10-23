@@ -4,6 +4,7 @@ description: "Client-only veb aplikacija za svakog HR profesionalca. Neke od fun
 image: "../images/candidates.jpg"
 tags:
   [
+    "React",
     "React Router (library)",
     "TypeScript",
     "TailwindCSS",

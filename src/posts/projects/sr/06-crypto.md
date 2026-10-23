@@ -4,6 +4,7 @@ description: "Ovaj projekat je izrađen korišćenjem React-router-a (framework)
 image: "../images/crypto.jpg"
 tags:
   [
+    "React",
     "React Router (framework)",
     "TypeScript",
     "TailwindCSS",

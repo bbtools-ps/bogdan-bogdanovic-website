@@ -4,6 +4,7 @@ description: "Client-only web application for every HR professional. Some of the
 image: "../images/candidates.jpg"
 tags:
   [
+    "React",
     "React Router (library)",
     "TypeScript",
     "TailwindCSS",
