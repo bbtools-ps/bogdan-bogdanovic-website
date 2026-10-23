@@ -30,7 +30,11 @@ const {
 const projectLink = infoLink || liveLink || sourceLink || ".";
 ---
 
-<div class="mb-20 grid grid-cols-1 gap-4 lg:grid-cols-2">
+<div
+  class="project-card mb-20 grid grid-cols-1 gap-4 lg:grid-cols-2"
+  data-project-card="true"
+  data-tags={JSON.stringify(tags)}
+>
   <div class="col-span-full mx-auto mb-5 flex">
     <a
       href={projectLink}

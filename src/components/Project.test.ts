@@ -32,6 +32,8 @@ describe("Project", () => {
     expect(result).toContain("https://example.com/live");
     expect(result).toContain("https://example.com/source");
     expect(result).toContain("https://example.com/design");
+    expect(result).toContain('data-project-card="true"');
+    expect(result).toContain('data-tags="[&quot;Astro&quot;,&quot;Testing&quot;]"');
     expect(result).toContain("Astro");
     expect(result).toContain("Testing");
   });

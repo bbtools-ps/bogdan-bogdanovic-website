@@ -2,7 +2,18 @@
 title: "Shadow 2.0 - Plugin for Photoshop"
 description: "Plugin for Adobe Photoshop that adds lifelike shadows to objects in a standing position."
 image: "../images/shadow-v2.jpg"
-tags: ["React", "TypeScript", "UXP API", "i18n", "Adobe Spectrum design system"]
+tags:
+  [
+    "React",
+    "TypeScript",
+    "i18n",
+    "Adobe Spectrum",
+    "UXP plugin",
+    "CSS",
+    "HTML",
+    "Zod",
+    "Tanstack Form",
+  ]
 infoLink: "https://exchange.adobe.com/apps/cc/02c1e043?fbclid=IwAR2ev6VYN0W9zFskhw7Ixf3tfoUqe_5dvDAGvfJYKR2X9nhFW6LZ_T9y188"
 ---
 

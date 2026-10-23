@@ -4,9 +4,7 @@ import { getLangFromUrl, useTranslations, useTranslatedPath } from "./utils";
 describe("i18n utils", () => {
   it("detects the language from the URL pathname", () => {
     expect(getLangFromUrl(new URL("https://example.com/sr/"))).toBe("sr");
-    expect(getLangFromUrl(new URL("https://example.com/en/portfolio"))).toBe(
-      "en",
-    );
+    expect(getLangFromUrl(new URL("https://example.com/en/portfolio"))).toBe("en");
     expect(getLangFromUrl(new URL("https://example.com/unknown/"))).toBe("en");
   });
 
@@ -20,9 +18,7 @@ describe("i18n utils", () => {
   it("falls back to the default language when a key is missing", () => {
     const t = useTranslations("sr");
 
-    expect(t("notFound.title" as keyof typeof t)).toBe(
-      "Stranica nije pronađena",
-    );
+    expect(t("notFound.title" as keyof typeof t)).toBe("Stranica nije pronađena");
   });
 
   it("builds localized paths", () => {

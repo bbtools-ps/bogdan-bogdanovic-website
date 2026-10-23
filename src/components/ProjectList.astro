@@ -1,9 +1,10 @@
 ---
-import { getLangFromUrl } from "@/i18n/utils";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import { getCollection } from "astro:content";
 import Project from "./Project.astro";
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const projects = await getCollection("projects", ({ id }) =>
   id.startsWith(lang),
@@ -13,19 +14,196 @@ const sortedProjects = projects.sort((a, b) => {
   const bNum = parseInt(b.id.split("/").pop() || "0");
   return aNum - bNum;
 });
+const allTags = Array.from(
+  new Set(sortedProjects.flatMap(({ data }) => data.tags)),
+).sort((a, b) => a.localeCompare(b, lang, { sensitivity: "base" }));
 ---
 
-{
-  sortedProjects.map(({ data }) => (
-    <Project
-      title={data.title}
-      description={data.description}
-      image={data.image}
-      tags={data.tags}
-      infoLink={data.infoLink}
-      liveLink={data.liveLink}
-      sourceLink={data.sourceLink}
-      designLink={data.designLink}
-    />
-  ))
-}
+<div>
+  {
+    allTags.length > 0 && (
+      <div>
+        <div class="mb-4">
+          <label class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-200">
+            <span>{t("project.filters.selectionMode")}</span>
+            <select
+            class="rounded-sm border border-slate-400 bg-white px-2 py-1 text-sm text-slate-700 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200"
+            data-project-filter-mode
+            aria-label={t("project.filters.selectionMode")}
+          >
+            <option value="single">{t("project.filters.single")}</option>
+            <option value="multiple">{t("project.filters.multiple")}</option>
+          </select>
+        </label>
+        </div>
+        <div class="mb-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div
+          class="flex flex-wrap gap-2"
+          data-project-tag-filters
+            data-selection-mode="single"
+        >
+          <button
+            type="button"
+            class="tag-filter-button inline-flex items-center rounded-sm border border-slate-400 bg-white px-3 py-1 text-sm text-slate-700 transition hover:border-blue-600 hover:text-blue-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:text-blue-300"
+            data-clear-tag-filters="true"
+            aria-pressed="true"
+          >
+            {t("project.filters.allProjects")}
+          </button>
+          {allTags.map((tag) => (
+            <button
+              type="button"
+              class="tag-filter-button inline-flex items-center rounded-sm border border-slate-400 bg-white px-3 py-1 text-sm text-slate-700 transition hover:border-blue-600 hover:text-blue-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:text-blue-300"
+              data-tag-filter={tag}
+              aria-pressed="false"
+            >
+              {tag}
+            </button>
+          ))}
+        </div>
+      </div>
+      </div>
+      
+    )
+  }
+  <p data-project-empty-state hidden class="mb-8 text-lg text-slate-600">
+    {t("project.filters.noProjects")}
+  </p>
+  {
+    sortedProjects.map(({ data }) => (
+      <Project
+        title={data.title}
+        description={data.description}
+        image={data.image}
+        tags={data.tags}
+        infoLink={data.infoLink}
+        liveLink={data.liveLink}
+        sourceLink={data.sourceLink}
+        designLink={data.designLink}
+      />
+    ))
+  }
+</div>
+
+<script is:inline>
+  (() => {
+    const filterGroup = document.querySelector("[data-project-tag-filters]");
+    const modeSelect = document.querySelector("[data-project-filter-mode]");
+    const selectedMode = () => modeSelect?.value || filterGroup?.dataset.selectionMode || "multiple";
+    const tagButtons = Array.from(document.querySelectorAll("[data-tag-filter]"));
+    const clearButton = document.querySelector("[data-clear-tag-filters]");
+    const projectCards = Array.from(document.querySelectorAll("[data-project-card]"));
+    const emptyState = document.querySelector("[data-project-empty-state]");
+    const selectedTags = new Set();
+
+    const setButtonState = (button, isSelected) => {
+      const activeClasses = [
+        "border-blue-600",
+        "bg-blue-100",
+        "text-blue-800",
+        "ring-2",
+        "ring-blue-500/50",
+        "dark:border-blue-400",
+        "dark:bg-blue-900/40",
+        "dark:text-blue-200",
+      ];
+
+      const inactiveClasses = [
+        "bg-white",
+        "text-slate-700",
+        "dark:bg-slate-800",
+        "dark:text-slate-200",
+      ];
+
+      activeClasses.forEach((className) => {
+        button.classList.toggle(className, isSelected);
+      });
+
+      inactiveClasses.forEach((className) => {
+        button.classList.toggle(className, !isSelected);
+      });
+    };
+
+    const syncButtonState = () => {
+      tagButtons.forEach((button) => {
+        const tag = button.dataset.tagFilter;
+        const isSelected = selectedTags.has(tag);
+        button.setAttribute("aria-pressed", String(isSelected));
+        button.classList.toggle("is-active", isSelected);
+        setButtonState(button, isSelected);
+      });
+
+      if (clearButton) {
+        const isSelected = selectedTags.size === 0;
+        clearButton.setAttribute("aria-pressed", String(isSelected));
+        clearButton.classList.toggle("is-active", isSelected);
+        setButtonState(clearButton, isSelected);
+      }
+    };
+
+    const applyFilters = () => {
+      const activeTags = Array.from(selectedTags);
+      let visibleProjects = 0;
+
+      projectCards.forEach((card) => {
+        const projectTags = JSON.parse(card.dataset.tags || "[]");
+        const isVisible =
+          activeTags.length === 0 ||
+          activeTags.every((tag) => projectTags.includes(tag));
+
+        card.hidden = !isVisible;
+
+        if (isVisible) {
+          visibleProjects += 1;
+        }
+      });
+
+      if (emptyState) {
+        emptyState.hidden = visibleProjects !== 0;
+      }
+
+      syncButtonState();
+    };
+
+    tagButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const tag = button.dataset.tagFilter;
+
+        if (!tag) {
+          return;
+        }
+
+        if (selectedMode() === "single") {
+          if (selectedTags.has(tag)) {
+            selectedTags.clear();
+          } else {
+            selectedTags.clear();
+            selectedTags.add(tag);
+          }
+        } else if (selectedTags.has(tag)) {
+          selectedTags.delete(tag);
+        } else {
+          selectedTags.add(tag);
+        }
+
+        applyFilters();
+      });
+    });
+
+    if (clearButton) {
+      clearButton.addEventListener("click", () => {
+        selectedTags.clear();
+        applyFilters();
+      });
+    }
+
+    if (modeSelect) {
+      modeSelect.addEventListener("change", () => {
+        selectedTags.clear();
+        applyFilters();
+      });
+    }
+
+    applyFilters();
+  })();
+</script>

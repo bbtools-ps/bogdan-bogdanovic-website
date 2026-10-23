@@ -8,7 +8,7 @@ tags:
     "TypeScript",
     "TailwindCSS",
     "tRPC",
-    "React Query",
+    "Tanstack Query",
     "NextAuth",
     "HeroUI",
     "Prisma",
