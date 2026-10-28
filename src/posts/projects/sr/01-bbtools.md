@@ -17,10 +17,11 @@ tags:
     "MongoDB",
     "Cloudinary",
     "Mailgun",
-    "Google ReCaptcha",
+    "Cloudflare Turnstile",
     "Vitest",
     "Cypress",
     "React Testing Library",
+    "i18n"
   ]
 liveLink: "https://bbtools.io/"
 designLink: "https://www.figma.com/design/shyyE8lHg2m04bk9Hb3xkG/BBTools-website?node-id=0-1&t=7U254uKEBCwp9hlv-1"

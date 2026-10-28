@@ -13,6 +13,7 @@ tags:
     "HTML",
     "Zod",
     "Tanstack Form",
+    "Adobe Photoshop"
   ]
 infoLink: "https://exchange.adobe.com/apps/cc/02c1e043?fbclid=IwAR2ev6VYN0W9zFskhw7Ixf3tfoUqe_5dvDAGvfJYKR2X9nhFW6LZ_T9y188"
 ---

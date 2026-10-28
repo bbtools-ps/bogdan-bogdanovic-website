@@ -2,7 +2,7 @@
 title: "Tints & Shades Generator"
 description: "A React-based color palette generator that creates beautiful tints and shades from any base color using OKLCH color space."
 image: "../images/tints-shades-generator.jpg"
-tags: ["React", "Adobe Spectrum", "Culori"]
+tags: ["React", "Adobe Spectrum", "Culori", "TypeScript"]
 liveLink: "https://bbtools-tints-shades-generator.netlify.app/"
 sourceLink: "https://github.com/bbtools-ps/tints-shades-generator"
 ---
