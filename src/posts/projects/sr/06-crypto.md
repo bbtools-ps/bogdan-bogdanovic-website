@@ -13,7 +13,7 @@ tags:
     "Vitest",
     "React Testing Library",
   ]
-liveLink: "http://crypto.bogdan-bogdanovic.com"
+liveLink: "https://crypto.bogdan-bogdanovic.com"
 sourceLink: "https://github.com/bbtools-ps/crypto"
 ---
 

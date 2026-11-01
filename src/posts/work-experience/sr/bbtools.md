@@ -2,7 +2,7 @@
 sortOrder: 4
 jobTitle: "Programer veb aplikacija i osnivač BBTools-a"
 companyName: "BBTools"
-companyLink: "http://bbtools.io/"
+companyLink: "https://bbtools.io/"
 description:
   [
     "Rad sa HTML, CSS, React.js, Vue.js, Node.js, BatchScript, MakScript i Vanilla JavaScript-om.",

@@ -2,7 +2,7 @@
 sortOrder: 4
 jobTitle: "Web Application Developer & Founder of BBTools"
 companyName: "BBTools"
-companyLink: "http://bbtools.io/"
+companyLink: "https://bbtools.io/"
 description:
   [
     "Working with HTML, CSS, React.js, Vue.js, Node.js, BatchScript, MaxScript and Vanilla JavaScript.",
