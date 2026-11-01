@@ -17,7 +17,7 @@ tags:
     "Cypress",
     "React Testing Library",
   ]
-liveLink: "https://candidates-hr-platform-next.vercel.app/"
+liveLink: "https://candidates-hr-platform-next.vercel.app"
 designLink: "https://www.figma.com/design/1UMnGZbZkO2yEZtnEnrQXv/Candidates-app?node-id=0-1&t=qCjSgnXoSIuBF4CK-1"
 ---
 
