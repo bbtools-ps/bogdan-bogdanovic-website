@@ -16,7 +16,7 @@ tags:
     "Vitest",
     "React Testing Library",
   ]
-liveLink: "https://bbtools-candidates.netlify.app/"
+liveLink: "http://candidates-client.bogdan-bogdanovic.com"
 sourceLink: "https://github.com/bbtools-ps/candidates-hr-platform"
 designLink: "https://www.figma.com/design/1UMnGZbZkO2yEZtnEnrQXv/Candidates-app?node-id=0-1&t=qCjSgnXoSIuBF4CK-1"
 ---
