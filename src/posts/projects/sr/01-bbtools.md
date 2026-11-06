@@ -10,7 +10,7 @@ tags:
     "TailwindCSS",
     "tRPC",
     "Tanstack Query",
-    "NextAuth",
+    "BetterAuth",
     "HeroUI",
     "Prisma",
     "Zod",
